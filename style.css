@@ -1,0 +1,260 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background:linear-gradient(black 20%, #4a3832 100%);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    margin: 0; /* Rimuove margini predefiniti del browser */
+    padding: 0; /* Rimuove padding predefiniti del browser */
+    width: 100%;
+    overflow-x: hidden; /* Evita lo scorrimento orizzontale */
+}
+
+.container
+{
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding:0 10px;
+    text-align: center;
+}
+
+#logo-image
+{
+    display: block;
+    margin: 0 auto;
+    top: 10px;
+    max-width: 100%;
+}
+
+#logo-caption
+{
+    font-size: 18px;
+    font-family: "Sancreek", sans-serif;
+    font-weight: 350;
+    color: #6e797a;
+    margin: 10px auto;    
+    text-align: center;
+    margin-top: 10px;
+    max-width: 90%;
+}
+
+#logo-end hr
+{
+    margin: 20px auto;
+    width: 90%;
+    border: 0;
+    color: #6e797a;
+}
+
+#table
+{
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    color: #6e797a;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 900px;  
+}
+
+#table th
+{
+    padding: 15px;
+    font-family: "Sancreek", sans-serif;
+    font-weight: 350;
+    font-size: 25px;
+    /* text-shadow: 1px 1px 0px white; */
+    width: 300px;       
+    text-align: center;
+    box-sizing: border-box;
+    cursor:pointer;
+
+}
+
+#table::before, #table::after
+{
+    content:'';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #6e797a, transparent);
+    opacity: 0.8;
+    transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+#table th:first-child, #table td:first-child
+{
+    border-left: none; /* Rimuove il bordo sinistro della prima colonna */
+}
+
+#table th:last-child, #table td:last-child
+{
+    border-right: none; /* Rimuove il bordo destro dell'ultima colonna */
+}
+
+#table th:hover
+{
+    text-shadow: 1px 1px 20px white;
+}
+#menu-section
+{
+    padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#menu-title
+{
+    position: relative;
+    font-family: "Sancreek", sans-serif;
+    font-weight: 150;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: none;
+    color: #969696;
+}
+
+#menu-title::after, #menu-title::before
+{
+    content:'';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent 20%, #6e797a, transparent 80%);
+    opacity: 0.8;
+    transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+#menu-title::before {
+    top: -2px; /* Bordo superiore */
+}
+
+#menu-title::after {
+    bottom: -2px; /* Bordo inferiore */
+}
+
+
+.menu-category
+{
+    margin-bottom: 40px;
+}
+
+.category-title
+{
+    font-family: "Playwrite AU SA", sans-serif;
+    color: #969696;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px dotted #969696;
+    padding-bottom: 5px;
+}
+
+.menu-items
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dish
+{
+    display: flex;
+    justify-content: space-between;
+    color: #6e797a;    
+}
+
+.dish-name
+{
+    flex: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+
+}
+
+.dish-price
+{
+    text-align: right;
+    width: 50px;
+}
+
+.dish-description
+{
+    font-family: "Playwrite AU SA", sans-serif;
+    font-size: 12px;
+    margin: 5px 0 15px 0;
+    line-height: 1.5;
+    color: #6e797a;    
+}
+
+#provspace
+{
+    font-size: 150px;
+}
+
+@media (max-width: 600px) {
+    #logo-caption
+    {
+        font-size: 16px; /* Riduce la dimensione del testo */
+        padding: 0 5px; /* Riduce il padding per schermi più piccoli */
+    }
+
+    #table
+    {
+        width: 100%;
+    }
+
+    #table th
+    {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #menu-section {
+        padding: 10px;
+    }
+
+    .menu-category {
+        margin-bottom: 20px;
+    }
+
+    .category-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .dish {
+        align-items: flex-start; /* Allinea il contenuto a sinistra */
+    }
+
+    .dish-name {
+        font-size: 16px; /* Riduce la dimensione del nome */
+        /* margin-bottom: 5px; Spazio sotto il nome */
+    }
+
+    .dish-price {
+        font-size: 14px;
+        margin: 0; /* Rimuove lo spazio a sinistra */
+    }
+
+    .dish-description {
+        font-size: 12px; /* Riduce il testo descrittivo */
+        margin-top: 2px;
+    }
+    
+}
