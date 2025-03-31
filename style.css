@@ -206,9 +206,10 @@ body
 {
     font-family: "Playwrite AU SA", sans-serif;
     font-size: 12px;
+    text-transform: uppercase;
     margin: 5px 0 15px 0;
     line-height: 1.5;
-    color: #FFFFFF;
+    color: #969696;
 }
 
 #provspace
