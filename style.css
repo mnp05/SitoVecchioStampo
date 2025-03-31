@@ -164,6 +164,15 @@ body
     padding-bottom: 5px;
 }
 
+.category-title-translation
+{
+    font-family: "Playwrite AU SA", sans-serif;
+    font-size: 18px;
+    margin: 5px 0 15px 0;
+    line-height: 1.5;
+    color: #6e797a;
+}
+
 .menu-items
 {
     list-style: none;
@@ -193,7 +202,7 @@ body
     width: 50px;
 }
 
-.dish-description
+.dish-translation
 {
     font-family: "Playwrite AU SA", sans-serif;
     font-size: 12px;
@@ -237,6 +246,12 @@ body
         font-size: 18px;
         margin-bottom: 10px;
     }
+    
+    .category-title-translation
+    {
+        font-size: 12px;
+        margin-top: 5px;
+    }
 
     .dish {
         align-items: flex-start; /* Allinea il contenuto a sinistra */
@@ -252,7 +267,7 @@ body
         margin: 0; /* Rimuove lo spazio a sinistra */
     }
 
-    .dish-description {
+    .dish-translation {
         font-size: 12px; /* Riduce il testo descrittivo */
         margin-top: 2px;
     }
