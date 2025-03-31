@@ -1,4 +1,4 @@
-* 
+=* 
 {
     margin: 0;
     padding: 0;
@@ -208,8 +208,7 @@ body
     font-size: 12px;
     margin: 5px 0 15px 0;
     line-height: 1.5;
-    color: #6e797a;    
-    text-shadow: 2px 2px 0px white;
+    color: white;
 }
 
 #provspace
