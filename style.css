@@ -158,18 +158,18 @@ body
     color: #969696;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     text-transform: uppercase;
-    border-bottom: 1px dotted #969696;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
 }
 
 .category-title-translation
 {
     font-family: "Playwrite AU SA", sans-serif;
-    font-size: 18px;
-    margin: 5px 0 15px 0;
+    font-size: 12px;
+    margin: 30px 0 15px 0;
     line-height: 1.5;
+    border-bottom: 1px dotted #969696;
     color: #6e797a;
 }
 
@@ -199,13 +199,13 @@ body
 .dish-price
 {
     text-align: right;
-    width: 50px;
+    width: 55px;
 }
 
 .dish-translation
 {
     font-family: "Playwrite AU SA", sans-serif;
-    font-size: 12px;
+    font-size: 8px;
     text-transform: uppercase;
     margin: 5px 0 15px 0;
     line-height: 1.5;
