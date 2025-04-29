@@ -120,6 +120,7 @@ body
     padding: 0 20px;
     max-width: 800px;
     margin: 0 auto;
+    scroll-margin-top: 40px;
 }
 
 #menu-title
