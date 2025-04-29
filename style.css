@@ -1,10 +1,14 @@
-* 
+*
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html 
+{
+    scroll-behavior: smooth;
+}
 body
 {
     background:linear-gradient(black 20%, #4a3832 100%);
@@ -61,6 +65,12 @@ body
     border-collapse: collapse;
     width: 90%;
     max-width: 900px;  
+}
+
+#table a 
+{
+    text-decoration: none;
+    color: inherit;
 }
 
 #table th
@@ -169,10 +179,11 @@ body
     font-family: "Playwrite AU SA", sans-serif;
     font-size: 12px;
     margin-top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     line-height: 1.5;
     border-bottom: 1px dotted #969696;
     color: #6e797a;
+    padding-bottom: 3px;
 }
 
 .menu-items
@@ -214,26 +225,26 @@ body
     color: #FFFFFF;
 }
 
-.beer-dish {
+.sized-dish {
     display: block; /* Stack the beer name and sizes vertically */
     margin-bottom: 15px; /* Add spacing between beer items */
     color: #6e797a;    
 }
 
-.beer-sizes {
-    margin-left: 20px; /* Indent the sizes */
+.dish-sizes {
+    margin-left: 50px; /* Indent the sizes */
     margin-top: 5px; /* Add spacing below the beer name */
     color: #6e797a;    
 }
 
-.beer-sizes .size {
+.dish-sizes .size {
     display: flex; /* Align size and price on the same line */
     justify-content: space-between; /* Keep size on the left and price on the right */
     color: #6e797a;    
     margin-bottom: 5px; /* Add spacing between sizes */
 }
 
-.beer-sizes .size-name {
+.dish-sizes .size-name {
     font-weight: normal; /* Differentiate size text from main name */
     font-size: 16px; /* Slightly smaller font size for sizes */
 }
