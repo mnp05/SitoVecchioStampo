@@ -23,7 +23,7 @@ body
 .container
 {
     max-width: 100vw;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     padding:0 10px;
     text-align: center;
 }
@@ -230,6 +230,11 @@ body
     font-size: 25px;
 }
 
+.menu-scrollbar-list a:hover
+{
+    text-shadow: 1px 1px 20px white;
+}
+
 .scroll-button {
     background-color: transparent;
     border: none;
@@ -355,7 +360,7 @@ body
         margin: 0;
         padding: 0;
         width: 100%;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         background-attachment: fixed;
     }
 
@@ -377,7 +382,7 @@ body
         top: 0;
         z-index: 100;
         padding: 10px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: transparent;
     }
 
     .menu-scrollbar-list {
