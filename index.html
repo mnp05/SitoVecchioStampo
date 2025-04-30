@@ -11,334 +11,338 @@
         <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Sancreek&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <div id="logo-image">
-                <img src="Images/LogoVecchioStampo.jpg" height="130">
-            </div>
+        <div class="wrapper">
+            <div class="container">
+                <div id="logo-image">
+                    <img src="Images/LogoVecchioStampo.jpg" height="130">
+                </div>
 
-            <div id="logo-caption">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus molestiae earum voluptas corporis nobis voluptatem harum qui, consequuntur quod accusamus dicta fugit iusto cupiditate, numquam ducimus illo consectetur, porro tempora.</p>
-            </div>
+                <div id="logo-caption">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus molestiae earum voluptas corporis nobis voluptatem harum qui, consequuntur quod accusamus dicta fugit iusto cupiditate, numquam ducimus illo consectetur, porro tempora.</p>
+                </div>
 
-            <div id="logo-end">
-                <hr>
-            </div>
+                <div id="logo-end">
+                    <hr>
+                </div>
 
-            <div>
-                <table id="table">
-                    <tr>
-                        <th id="col1"><a href="#menu-section">Menu</a></th>
-                        <th id="col2">Galleria</th>
-                        <th id="col3">Contatti</th>
-                    </tr>
-                </table>
-            </div>
+                <div>
+                    <table id="table">
+                        <tr>
+                            <th id="col1"><a href="#menu-section">Menu</a></th>
+                            <th id="col2">Galleria</th>
+                            <th id="col3">Contatti</th>
+                        </tr>
+                    </table>
+                </div>
             
 
 
-        </div>
-        
-        <div id="provspace">
+            </div>
+            
+            <div id="provspace">
                 <!-- immagini credo -->
                 <br>
                 <br>
                 <br>
-        </div>
-        
-        <div id="menu-section">
-            <br>
-            <br>
-            <br>
-            <h1 id="menu-title">MENU</h1>
+            </div>
+            
+            <div id="menu-section">
+                <br>
+                <br>
+                <br>
+                <h1 id="menu-title">MENU</h1>
 
-            <!-- barra a scorrimento laterale con le varie sezioni che rimane attaccata al bordo superiore-->
-            <div class="menu-scrollbar-container">
-                <button class="scroll-button left" onmouseenter="startScrolling(-1)" onmouseleave="stopScrolling()">&#8249;</button>
-                <div class="menu-scrollbar">
-                    <ul class="menu-scrollbar-list">
-                        <li><a href="#antipasti">Antipasti</a></li>
-                        <li><a href="#primi">Primi</a></li>
-                        <li><a href="#secondi">Secondi</a></li>
-                        <li><a href="#contorni">Contorni</a></li>
-                        <li><a href="#vini-rossi">Vini Rossi</a></li>
-                        <li><a href="#vini-rosati">Vini Rosati</a></li>
-                        <li><a href="#vini-bianchi">Vini Bianchi</a></li>
-                        <li><a href="#birra">Birra</a></li>
-                        <li><a href="#altre-bevande">Altre Bevande</a></li>
+                <!-- barra a scorrimento laterale con le varie sezioni che rimane attaccata al bordo superiore-->
+                <div class="menu-scrollbar-container">
+                    <button class="scroll-button left" onmouseenter="startScrolling(-1)" onmouseleave="stopScrolling()">&#8249;</button>
+                    <div class="menu-scrollbar">
+                        <ul class="menu-scrollbar-list">
+                            <li><a href="#antipasti">Antipasti</a></li>
+                            <li><a href="#primi">Primi</a></li>
+                            <li><a href="#secondi">Secondi</a></li>
+                            <li><a href="#contorni">Contorni</a></li>
+                            <li><a href="#vini-rossi">Vini Rossi</a></li>
+                            <li><a href="#vini-rosati">Vini Rosati</a></li>
+                            <li><a href="#vini-bianchi">Vini Bianchi</a></li>
+                            <li><a href="#birra">Birra</a></li>
+                            <li><a href="#altre-bevande">Altre Bevande</a></li>
+                        </ul>
+                    </div>  
+                    <button class="scroll-button right" onmouseenter="startScrolling(1)" onmouseleave="stopScrolling()">&#8250;</button>
+                </div>
+
+                <!-- Sezione Antipasti -->
+                <div id="antipasti" class="menu-category">
+                    <h2 class="category-title">ANTIPASTI</h2>
+                    <p class="category-title-translation">APPETIZERS</p>
+                    <ul class="menu-items">
+                        <div class="dish">
+                            <span class="dish-name">tagliere molisano di salumi e formaggi piccolo</span>
+                            <span class="dish-price">12€</span>
+                        </div>
+                        <p class="dish-translation">cold cuts and cheese small platter</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">tagliere molisano di salumi e formaggi grande</span>
+                            <span class="dish-price">22€</span>
+                        </div>
+                        <p class="dish-translation">cold cuts and cheese big platter</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">carpaccio di scottona</span>
+                            <span class="dish-price">10€</span>
+                        </div>
+                        <p class="dish-translation">heifer carpaccio</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">prosciutto crudo e mozzarella di bufala</span>
+                            <span class="dish-price">12€</span>
+                        </div>
+                        <p class="dish-translation">raw ham and buffalo mozzarella cheese</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">bruschette</span>
+                            <span class="dish-price">4€</span>
+                        </div>
+                        <!-- <p class="dish-translation">~Descrizione~</p> -->
+                        
+                        <!-- <div class="dish">
+                            <span class="dish-name"></span>
+                            <span class="dish-price"></span>
+                        </div>
+                        <p class="dish-translation"></p> -->
                     </ul>
-                </div>  
-                <button class="scroll-button right" onmouseenter="startScrolling(1)" onmouseleave="stopScrolling()">&#8250;</button>
-            </div>
+                </div>        
+                <!-- Sezione Primi -->
+                <div id="primi" class="menu-category">
+                    <h2 class="category-title">PRIMI</h2>
+                    <p class="category-title-translation">MAIN COURSES</p>
+                    <ul class="menu-items">
+                        <!-- <li> -->
+                        <div class="dish">
+                            <span class="dish-name">fettuccine ai funghi porcini e tartufo</span>
+                            <span class="dish-price">12€</span>
+                        </div>
+                        <p class="dish-translation">fettuccine with porcini mushrooms and truffle</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">cavatelli al ragu molisano</span>
+                            <span class="dish-price">10€</span>
+                        </div>
+                        <p class="dish-translation">cavatelli with molisan sauce</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">fusilli alla ventricina</span>
+                            <span class="dish-price">10€</span>
+                        </div>
+                        <p class="dish-translation">fusilli with ventricina</p>
+                        
+                        <!-- <div class="dish">
+                            <span class="dish-name"></span>
+                            <span class="dish-price"></span>
+                        </div>
+                        <p class="dish-translation"></p> -->
+                        <!-- </li> -->
+                    </ul>
+                </div>
+                <!-- Sezione Secondi -->
+                <div id="secondi" class="menu-category">
+                    <h2 class="category-title">SECONDI</h2>
+                    <p class="category-title-translation">SECOND COURSES</p>
+                    <ul class="menu-items">
+                        <div class="dish">
+                            <span class="dish-name">grigliata di agnello</span>
+                            <span class="dish-price">20€</span>
+                        </div>
+                        <p class="dish-translation">lamb grill</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">grigliata mista</span>
+                            <span class="dish-price">18€</span>
+                        </div>
+                        <p class="dish-translation">mixed grill</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">tagliata di manzo con rucola e grana</span>
+                            <span class="dish-price">18€</span>
+                        </div>
+                        <p class="dish-translation">sliced beef with rocket and parmesan flakes</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">filetto ai ferri</span>
+                            <span class="dish-price">20€</span>
+                        </div>
+                        <p class="dish-translation">grilled tenderloin</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">entrecote</span>
+                            <span class="dish-price">18€</span>
+                        </div>
+                        <p class="dish-translation">beef entrecote</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">straccetti di scottona all'aceto balsamico</span>
+                            <span class="dish-price">14€</span>
+                        </div>
+                        <p class="dish-translation">heifer's strips with balsamic vinegar</p>
+                        
+                        <div class="dish">
+                            <span class="dish-name">fiorentina (secondo disponibilità)</span>
+                            <span class="dish-price">5€ l'etto</span>
+                        </div>
+                        <p class="dish-translation">fiorentine beef steak, subject to availability</p>
 
-            <!-- Sezione Antipasti -->
-            <div id="antipasti" class="menu-category">
-                <h2 class="category-title">ANTIPASTI</h2>
-                <p class="category-title-translation">APPETIZERS</p>
-                <ul class="menu-items">
-                    <div class="dish">
-                        <span class="dish-name">tagliere molisano di salumi e formaggi piccolo</span>
-                        <span class="dish-price">12€</span>
-                    </div>
-                    <p class="dish-translation">cold cuts and cheese small platter</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">tagliere molisano di salumi e formaggi grande</span>
-                        <span class="dish-price">22€</span>
-                    </div>
-                    <p class="dish-translation">cold cuts and cheese big platter</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">carpaccio di scottona</span>
-                        <span class="dish-price">10€</span>
-                    </div>
-                    <p class="dish-translation">heifer carpaccio</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">prosciutto crudo e mozzarella di bufala</span>
-                        <span class="dish-price">12€</span>
-                    </div>
-                    <p class="dish-translation">raw ham and buffalo mozzarella cheese</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">bruschette</span>
-                        <span class="dish-price">4€</span>
-                    </div>
-                    <!-- <p class="dish-translation">~Descrizione~</p> -->
-                    
-                    <!-- <div class="dish">
-                        <span class="dish-name"></span>
-                        <span class="dish-price"></span>
-                    </div>
-                    <p class="dish-translation"></p> -->
-                </ul>
-            </div>        
-            <!-- Sezione Primi -->
-            <div id="primi" class="menu-category">
-                <h2 class="category-title">PRIMI</h2>
-                <p class="category-title-translation">MAIN COURSES</p>
-                <ul class="menu-items">
-                    <!-- <li> -->
-                    <div class="dish">
-                        <span class="dish-name">fettuccine ai funghi porcini e tartufo</span>
-                        <span class="dish-price">12€</span>
-                    </div>
-                    <p class="dish-translation">fettuccine with porcini mushrooms and truffle</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">cavatelli al ragu molisano</span>
-                        <span class="dish-price">10€</span>
-                    </div>
-                    <p class="dish-translation">cavatelli with molisan sauce</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">fusilli alla ventricina</span>
-                        <span class="dish-price">10€</span>
-                    </div>
-                    <p class="dish-translation">fusilli with ventricina</p>
-                    
-                    <!-- <div class="dish">
-                        <span class="dish-name"></span>
-                        <span class="dish-price"></span>
-                    </div>
-                    <p class="dish-translation"></p> -->
-                    <!-- </li> -->
-                </ul>
-            </div>
-            <!-- Sezione Secondi -->
-            <div id="secondi" class="menu-category">
-                <h2 class="category-title">SECONDI</h2>
-                <p class="category-title-translation">SECOND COURSES</p>
-                <ul class="menu-items">
-                    <div class="dish">
-                        <span class="dish-name">grigliata di agnello</span>
-                        <span class="dish-price">20€</span>
-                    </div>
-                    <p class="dish-translation">lamb grill</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">grigliata mista</span>
-                        <span class="dish-price">18€</span>
-                    </div>
-                    <p class="dish-translation">mixed grill</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">tagliata di manzo con rucola e grana</span>
-                        <span class="dish-price">18€</span>
-                    </div>
-                    <p class="dish-translation">sliced beef with rocket and parmesan flakes</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">filetto ai ferri</span>
-                        <span class="dish-price">20€</span>
-                    </div>
-                    <p class="dish-translation">grilled tenderloin</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">entrecote</span>
-                        <span class="dish-price">18€</span>
-                    </div>
-                    <p class="dish-translation">beef entrecote</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">straccetti di scottona all'aceto balsamico</span>
-                        <span class="dish-price">14€</span>
-                    </div>
-                    <p class="dish-translation">heifer's strips with balsamic vinegar</p>
-                    
-                    <div class="dish">
-                        <span class="dish-name">fiorentina (secondo disponibilità)</span>
-                        <span class="dish-price">5€ l'etto</span>
-                    </div>
-                    <p class="dish-translation">fiorentine beef steak, subject to availability</p>
-
-                    <div class="dish">
-                        <span class="dish-name">arrosticini (10 pz.)</span>
-                        <span class="dish-price">13€</span>
-                    </div>
-                    <p class="dish-translation">sheep skewers</p>
-                </ul>
-            </div>
-            <!-- Sezione Contorni -->
-            <div id="contorni" class="menu-category">
-                <h2 class="category-title">CONTORNI</h2>
-                <p class="category-title-translation">SIDE DISHES</p>
-                <ul class="menu-items">
-                    <div class="dish">
-                        <span class="dish-name">patatine fritte</span>
-                        <span class="dish-price">4€</span>
-                    </div>
-                    <p class="dish-translation">french fries</p>
-                    <div class="dish">
-                        <span class="dish-name">insalata verde</span>
-                        <span class="dish-price">4€</span>
-                    </div>
-                    <p class="dish-translation">green salad</p>
-                    <div class="dish">
-                        <span class="dish-name">verdure grigliate</span>
-                        <span class="dish-price">4€</span>
-                    </div>
-                    <p class="dish-translation">grilled vegetables</p>
-                </ul>
-            </div>
-            <!-- Sezione Vini Rossi -->
-            <div id="vini-rossi" class="menu-category">
-                <h2 class="category-title">VINI ROSSI</h2>
-                <p class="category-title-translation">RED WINES</p>
-                <ul class="menu-items">
-                    <div class="dish">
-                        <span class="dish-name">Montepulciano Murelle</span>
-                        <span class="dish-price">12€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Montepulciano “Petriera” Catabbo</span>
-                        <span class="dish-price">15€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Negramaro del Salento</span>
-                        <span class="dish-price">18€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Primitivo di Manduria</span>
-                        <span class="dish-price">20€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Susumaniello del Salento</span>
-                        <span class="dish-price">18€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Tintilia Catabbo</span>
-                        <span class="dish-price">22€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Tintilia Giagnacovo</span>
-                        <span class="dish-price">23€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Montepulciano Riserva “Il Fondatore”</span>
-                        <span class="dish-price">20€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Montepulciano Jasci</span>
-                        <span class="dish-price">16€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Montepulciano Riserva “Domino” Jasci</span>
-                        <span class="dish-price">20€</span>
-                    </div>
-                </ul>
-            </div>
-            <!-- Sezione Vini Rosati -->
-            <div id="vini-rosati" class="menu-category">
-                <h2 class="category-title">VINI ROSATI</h2>
-                <p class="category-title-translation">ROSE WINES</p>
-                <ul class="menu-items">
-                    <div class="dish">
-                        <span class="dish-name">Cerasuolo Murelle</span>
-                        <span class="dish-price">12€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Rosato “Petriera” Catabbo</span>
-                        <span class="dish-price">15€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Rosato Negramaro</span>
-                        <span class="dish-price">17€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">Rosato Jasci</span>
-                        <span class="dish-price">16€</span>
-                    </div>
-                </ul>
-            </div>
-            <!-- Sezione Vini Bianchi -->
-            <div id="vini-bianchi" class="menu-category">
-                <h2 class="category-title">VINI BIANCHI</h2>
-                <p class="category-title-translation">WHITE WINES</p>
-                <ul class="menu-items">
-                    <div class="dish">
-                        <span class="dish-name">pecorino Murelle</span>
-                        <span class="dish-price">12€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">falanghina</span>
-                        <span class="dish-price">14€</span>
-                    </div>
-                </ul>
-            </div>    
-            <!-- Sezione Birra -->
-            <div id="birra" class="menu-category">
-                <h2 class="category-title">BIRRA</h2>
-                <p class="category-title-translation">BEER</p>
-                <ul class="menu-items">
-                    <div class="sized-dish">
-                        <span class="dish-name">Thurn und Taxis</span>
-                        <div class="dish-sizes">
-                            <div class="size">
-                                <span class="size-name">0.2 (Small)</span>
-                                <span class="dish-price">4€</span>
-                            </div>
-                            <div class="size">
-                                <span class="size-name">0.4 (Large)</span>
-                                <span class="dish-price">6€</span>
+                        <div class="dish">
+                            <span class="dish-name">arrosticini (10 pz.)</span>
+                            <span class="dish-price">13€</span>
+                        </div>
+                        <p class="dish-translation">sheep skewers</p>
+                    </ul>
+                </div>
+                <!-- Sezione Contorni -->
+                <div id="contorni" class="menu-category">
+                    <h2 class="category-title">CONTORNI</h2>
+                    <p class="category-title-translation">SIDE DISHES</p>
+                    <ul class="menu-items">
+                        <div class="dish">
+                            <span class="dish-name">patatine fritte</span>
+                            <span class="dish-price">4€</span>
+                        </div>
+                        <p class="dish-translation">french fries</p>
+                        <div class="dish">
+                            <span class="dish-name">insalata verde</span>
+                            <span class="dish-price">4€</span>
+                        </div>
+                        <p class="dish-translation">green salad</p>
+                        <div class="dish">
+                            <span class="dish-name">verdure grigliate</span>
+                            <span class="dish-price">4€</span>
+                        </div>
+                        <p class="dish-translation">grilled vegetables</p>
+                    </ul>
+                </div>
+                <!-- Sezione Vini Rossi -->
+                <div id="vini-rossi" class="menu-category">
+                    <h2 class="category-title">VINI ROSSI</h2>
+                    <p class="category-title-translation">RED WINES</p>
+                    <ul class="menu-items">
+                        <div class="dish">
+                            <span class="dish-name">Montepulciano Murelle</span>
+                            <span class="dish-price">12€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Montepulciano “Petriera” Catabbo</span>
+                            <span class="dish-price">15€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Negramaro del Salento</span>
+                            <span class="dish-price">18€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Primitivo di Manduria</span>
+                            <span class="dish-price">20€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Susumaniello del Salento</span>
+                            <span class="dish-price">18€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Tintilia Catabbo</span>
+                            <span class="dish-price">22€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Tintilia Giagnacovo</span>
+                            <span class="dish-price">23€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Montepulciano Riserva “Il Fondatore”</span>
+                            <span class="dish-price">20€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Montepulciano Jasci</span>
+                            <span class="dish-price">16€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Montepulciano Riserva “Domino” Jasci</span>
+                            <span class="dish-price">20€</span>
+                        </div>
+                    </ul>
+                </div>
+                <!-- Sezione Vini Rosati -->
+                <div id="vini-rosati" class="menu-category">
+                    <h2 class="category-title">VINI ROSATI</h2>
+                    <p class="category-title-translation">ROSE WINES</p>
+                    <ul class="menu-items">
+                        <div class="dish">
+                            <span class="dish-name">Cerasuolo Murelle</span>
+                            <span class="dish-price">12€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Rosato “Petriera” Catabbo</span>
+                            <span class="dish-price">15€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Rosato Negramaro</span>
+                            <span class="dish-price">17€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">Rosato Jasci</span>
+                            <span class="dish-price">16€</span>
+                        </div>
+                    </ul>
+                </div>
+                <!-- Sezione Vini Bianchi -->
+                <div id="vini-bianchi" class="menu-category">
+                    <h2 class="category-title">VINI BIANCHI</h2>
+                    <p class="category-title-translation">WHITE WINES</p>
+                    <ul class="menu-items">
+                        <div class="dish">
+                            <span class="dish-name">pecorino Murelle</span>
+                            <span class="dish-price">12€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">falanghina</span>
+                            <span class="dish-price">14€</span>
+                        </div>
+                    </ul>
+                </div>    
+                <!-- Sezione Birra -->
+                <div id="birra" class="menu-category">
+                    <h2 class="category-title">BIRRA</h2>
+                    <p class="category-title-translation">BEER</p>
+                    <ul class="menu-items">
+                        <div class="sized-dish">
+                            <span class="dish-name">Thurn und Taxis</span>
+                            <div class="dish-sizes">
+                                <div class="size">
+                                    <span class="size-name">0.2 (Small)</span>
+                                    <span class="dish-price">4€</span>
+                                </div>
+                                <div class="size">
+                                    <span class="size-name">0.4 (Large)</span>
+                                    <span class="dish-price">6€</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </ul>
+                    </ul>
+                </div>
+                <!-- Sezione Altre Bevande -->
+                <div id="altre-bevande" class="menu-category">
+                    <h2 class="category-title">ALTRE BEVANDE</h2>
+                    <p class="category-title-translation">OTHER DRINKS</p>
+                    <ul class="menu-items">
+                        <div class="dish">
+                            <span class="dish-name">acqua naturale e frizzante 0.75</span>
+                            <span class="dish-price">2€</span>
+                        </div>
+                        <div class="dish">
+                            <span class="dish-name">bibite in lattina</span>
+                            <span class="dish-price">2.5€</span>
+                        </div>
+                    </ul>
+                </div>
             </div>
-            <!-- Sezione Altre Bevande -->
-            <div id="altre-bevande" class="menu-category">
-                <h2 class="category-title">ALTRE BEVANDE</h2>
-                <p class="category-title-translation">OTHER DRINKS</p>
-                <ul class="menu-items">
-                    <div class="dish">
-                        <span class="dish-name">acqua naturale e frizzante 0.75</span>
-                        <span class="dish-price">2€</span>
-                    </div>
-                    <div class="dish">
-                        <span class="dish-name">bibite in lattina</span>
-                        <span class="dish-price">2.5€</span>
-                    </div>
-                </ul>
-            </div>
+        </div>
+        
     </body>
 </html>
