@@ -351,59 +351,88 @@ body
 }
 
 @media (max-width: 600px) {
-    #logo-caption
-    {
-        font-size: 16px; /* Riduce la dimensione del testo */
-        padding: 0 5px; /* Riduce il padding per schermi più piccoli */
-    }
-
-    #table
-    {
+    html, body {
+        margin: 0;
+        padding: 0;
         width: 100%;
+        overflow-x: hidden;
+        background-attachment: fixed;
     }
 
-    #table th
-    {
-        font-size: 20px;
-        padding: 10px;
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        text-align: center;
     }
 
     #menu-section {
         padding: 10px;
     }
 
+    .menu-scrollbar-container {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .menu-scrollbar-list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .menu-scrollbar-list a {
+        font-size: 18px;
+    }
+
+    .scroll-button {
+        font-size: 24px;
+        padding: 5px;
+    }
+
     .menu-category {
         margin-bottom: 20px;
+        scroll-margin-top: 60px;
     }
 
     .category-title {
         font-size: 18px;
         margin-bottom: 10px;
     }
-    
-    .category-title-translation
-    {
+
+    .category-title-translation {
         font-size: 12px;
         margin-top: 5px;
     }
 
     .dish {
-        align-items: flex-start; /* Allinea il contenuto a sinistra */
+        align-items: flex-start;
     }
 
     .dish-name {
-        font-size: 16px; /* Riduce la dimensione del nome */
-        /* margin-bottom: 5px; Spazio sotto il nome */
+        font-size: 16px;
     }
 
     .dish-price {
         font-size: 14px;
-        margin: 0; /* Rimuove lo spazio a sinistra */
+        margin: 0;
     }
 
     .dish-translation {
-        font-size: 12px; /* Riduce il testo descrittivo */
+        font-size: 12px;
         margin-top: 2px;
     }
-    
+
+    #logo-image {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
 }
