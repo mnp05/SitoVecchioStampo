@@ -11,9 +11,9 @@ html
 }
 body
 {
-    background:linear-gradient(black , #4a3832 );
+    background:linear-gradient(black 30%, #4a3832 );
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     margin: 0; /* Rimuove margini predefiniti del browser */
     padding: 0; /* Rimuove padding predefiniti del browser */
     width: 100%;
@@ -165,8 +165,7 @@ body
     top: 0;
     z-index: 100;
     padding: 10px;
-    background-color: black;
-    transition: background-color 0.3s ease;
+    background-color: transparent;
 }
 
 .menu-scrollbar-container::before,
@@ -256,6 +255,7 @@ body
 .menu-category
 {
     margin-bottom: 40px;
+    scroll-margin-top: 50px;
 }
 
 .category-title
