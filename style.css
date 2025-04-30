@@ -11,7 +11,7 @@ html
 }
 body
 {
-    background:linear-gradient(black 20%, #4a3832 100%);
+    background:linear-gradient(black , #4a3832 );
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     margin: 0; /* Rimuove margini predefiniti del browser */
@@ -157,6 +157,101 @@ body
     bottom: -2px; /* Bordo inferiore */
 }
 
+.menu-scrollbar-container
+{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+.menu-scrollbar-container::before,
+.menu-scrollbar-container::after {
+    content: '';
+    position: absolute;
+    left: -200px;
+    width: calc(100% + 400px); /* Adjust width to cover the scrollbar area */
+    height: 2px;
+    background: linear-gradient(to right, transparent 20%, #6e797a, transparent 80%);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.menu-scrollbar-container::before {
+    top: 0; /* Position the left fading line */
+}
+
+.menu-scrollbar-container::after {
+    bottom: 0; /* Position the right fading line */
+}
+
+
+.menu-scrollbar
+{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; 
+    /* scroll-behavior: smooth; */
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    padding: 10px 0;
+}
+
+.menu-scrollbar::-webkit-scrollbar
+{
+    display: none;
+}
+
+.menu-scrollbar-list
+{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* justify-content: center; */
+    gap: 50px;
+}
+
+.menu-scrollbar-list li
+{
+    display: inline-block;
+}
+
+.menu-scrollbar-list a
+{
+    text-decoration: none;
+    color: #6e797a;
+    font-family: "Sancreek", sans-serif;
+    font-size: 25px;
+}
+
+.scroll-button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #6e797a;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.scroll-button:hover {
+    color: #969696;
+}
+
+.scroll-button.left {
+    margin-right: 10px;
+}
+
+.scroll-button.right {
+    margin-left: 10px;
+}
 
 .menu-category
 {
