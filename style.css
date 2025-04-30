@@ -369,10 +369,10 @@ body
         overflow-x: hidden;
     }
     
-    .wrapper
+    /* .wrapper
     {
         overflow-x: visible;
-    }
+    } */
 
     .container {
         max-width: 100%;
