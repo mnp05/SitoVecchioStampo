@@ -265,11 +265,11 @@ body
 
 .category-title
 {
-    font-family: "Playwrite AU SA", sans-serif;
+    font-family: "Sancreek", sans-serif;
     color: #969696;
     font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
     line-height: 1;
     margin-bottom: 2px;
     padding-top: 30px;
@@ -277,8 +277,8 @@ body
 
 .category-title-translation
 {
-    font-family: "Playwrite AU SA", sans-serif;
-    font-size: 12px;
+    font-family: "Sancreek", sans-serif;
+    font-size: 15px;
     margin-top: 0px;
     margin-bottom: 5px;
     line-height: 1.5;
@@ -298,7 +298,6 @@ body
 {
     display: flex;
     justify-content: space-between;
-    color: #6e797a;    
 }
 
 .dish-name
@@ -306,24 +305,29 @@ body
     flex: 1;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1;
+    color: #969696;
+    
 }
 
 .dish-price
 {
     text-align: right;
     width: 55px;
+    color: #969696;
+    font-weight: bold;
+    
 }
 
 .dish-translation
 {
     font-family: "Playwrite AU SA", sans-serif;
-    font-size: 8px;
+    color: #6e797a;    
+    font-size: 10px;
     text-transform: uppercase;
     margin: 1px 0 15px 0;
     line-height: 1.5;
-    color: #FFFFFF;
 }
 
 .sized-dish {
@@ -356,97 +360,117 @@ body
 }
 
 @media (max-width: 600px) {
+    /* Ensure no horizontal scrolling */
     html, body {
         margin: 0;
         padding: 0;
         width: 100%;
-        align-items: center;
-        background-attachment: fixed;
+        overflow-x: hidden; /* Disable horizontal scrolling */
     }
 
-    body 
-    {
-        overflow-x: hidden;
+    /* Wrapper adjustments */
+    .wrapper {
+        width: 100%; /* Ensure the wrapper occupies the full width */
+        overflow-x: visible; /* Allow sticky elements to work properly */
     }
-    
-    /* .wrapper
-    {
-        overflow-x: visible;
-    } */
 
+    /* Container adjustments */
     .container {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0 10px;
+        max-width: 100%; /* Ensure the container occupies the full width */
+        margin: 0 auto; /* Center the container */
+        padding: 0 10px; /* Add some padding for spacing */
         text-align: center;
     }
 
+    /* Menu section adjustments */
     #menu-section {
         padding: 10px;
+        max-width: 100%; /* Ensure the menu section occupies the full width */
+        margin: 0 auto;
     }
 
+    /* Sticky scrollbar adjustments */
     .menu-scrollbar-container {
         display: flex;
         align-items: center;
-        position: sticky;
-        top: 0;
+        position: sticky; /* Preserve sticky behavior */
+        top: 0; /* Stick to the top of the viewport */
         z-index: 100;
         padding: 10px;
-        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.8); /* Add a background color for better visibility */
     }
 
+    /* Scrollbar list adjustments */
     .menu-scrollbar-list {
         display: flex;
         list-style: none;
         padding: 0;
         margin: 0;
-        gap: 20px;
+        gap: 15px; /* Reduce gap for smaller screens */
+        overflow-x: auto; /* Allow horizontal scrolling for the scrollbar content */
+        white-space: nowrap; /* Prevent items from wrapping */
     }
 
     .menu-scrollbar-list a {
-        font-size: 18px;
+        font-size: 16px; /* Adjust font size for better readability */
+        color: #6e797a;
+        text-decoration: none;
     }
 
+    /* Scroll buttons adjustments */
     .scroll-button {
-        font-size: 24px;
+        font-size: 20px; /* Adjust button size */
         padding: 5px;
+        color: #6e797a;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
 
+    .scroll-button:hover {
+        color: #969696;
+    }
+
+    /* Menu category adjustments */
     .menu-category {
         margin-bottom: 20px;
-        scroll-margin-top: 60px;
+        scroll-margin-top: 60px; /* Adjust scroll offset for better alignment */
     }
 
     .category-title {
-        font-size: 18px;
+        font-size: 18px; /* Adjust font size for smaller screens */
         margin-bottom: 10px;
     }
 
     .category-title-translation {
-        font-size: 12px;
+        font-size: 12px; /* Adjust translation text size */
         margin-top: 5px;
     }
 
+    /* Dish adjustments */
     .dish {
+        display: flex;
+        justify-content: space-between;
         align-items: flex-start;
     }
 
     .dish-name {
-        font-size: 16px;
+        font-size: 14px; /* Adjust dish name size */
     }
 
     .dish-price {
-        font-size: 14px;
-        margin: 0;
+        font-size: 12px; /* Adjust price size */
+        text-align: right;
     }
 
     .dish-translation {
-        font-size: 12px;
+        font-size: 10px; /* Adjust translation text size */
         margin-top: 2px;
     }
 
+    /* Logo adjustments */
     #logo-image {
-        max-width: 100%;
+        max-width: 100%; /* Ensure the logo scales properly */
         height: auto;
         margin: 0 auto;
     }
