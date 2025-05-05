@@ -360,9 +360,19 @@ body
         margin: 0;
         padding: 0;
         width: 100%;
-        /* overflow-x: hidden; */
+        align-items: center;
         background-attachment: fixed;
     }
+
+    body 
+    {
+        overflow-x: hidden;
+    }
+    
+    /* .wrapper
+    {
+        overflow-x: visible;
+    } */
 
     .container {
         max-width: 100%;
