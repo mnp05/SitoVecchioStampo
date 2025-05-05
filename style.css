@@ -371,7 +371,11 @@ body
     /* Wrapper adjustments */
     .wrapper {
         width: 100%; /* Ensure the wrapper occupies the full width */
-        overflow-x: visible; /* Allow sticky elements to work properly */
+    }
+
+    .wrapper, .container {
+        overflow: visible; /* Ensure sticky works properly */
+        position: relative; /* Allow sticky positioning */
     }
 
     /* Container adjustments */
@@ -407,7 +411,6 @@ body
         padding: 0;
         margin: 0;
         gap: 15px; /* Reduce gap for smaller screens */
-        overflow-x: auto; /* Allow horizontal scrolling for the scrollbar content */
         white-space: nowrap; /* Prevent items from wrapping */
     }
 
