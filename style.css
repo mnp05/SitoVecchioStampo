@@ -442,11 +442,11 @@ body
 
     .category-title {
         font-size: 18px; /* Adjust font size for smaller screens */
-        margin-bottom: 10px;
+        margin-bottom: 1px;
     }
 
     .category-title-translation {
-        font-size: 12px; /* Adjust translation text size */
+        font-size: 10px; /* Adjust translation text size */
         margin-top: 5px;
     }
 
@@ -458,7 +458,7 @@ body
     }
 
     .dish-name {
-        font-size: 14px; /* Adjust dish name size */
+        font-size: 12px; /* Adjust dish name size */
     }
 
     .dish-price {
@@ -467,7 +467,7 @@ body
     }
 
     .dish-translation {
-        font-size: 10px; /* Adjust translation text size */
+        font-size: 7px; /* Adjust translation text size */
         margin-top: 2px;
     }
 
