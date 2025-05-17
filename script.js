@@ -18,21 +18,64 @@ function isTouchDevice() {
 
 
 
+let stickyPoint = null;
+
+window.addEventListener('DOMContentLoaded', () => {
+    const savedStickyPoint = localStorage.getItem('stickyPoint');
+    if (savedStickyPoint !== null) {
+        stickyPoint = parseInt(savedStickyPoint, 10);
+    } else {
+        updateStickyPoint(); // Only calculate if not stored
+    }
+    setScrollbarBackgroundOnStick();
+});
+
+function updateStickyPoint() {
+    const scrollbar = document.querySelector('.menu-scrollbar-container');
+    if (!scrollbar) return;
+    stickyPoint = scrollbar.offsetTop;
+    localStorage.setItem('stickyPoint', stickyPoint); // Save to localStorage
+    setScrollbarBackgroundOnStick();
+}
+
 function setScrollbarBackgroundOnStick() {
     const scrollbar = document.querySelector('.menu-scrollbar-container');
-    const stickyPoint = scrollbar.offsetTop; // Get the element's position relative to the top of the page
+    if (!scrollbar || stickyPoint === null) return;
+    const isScrolled = window.scrollY >= stickyPoint;
 
-    if (window.scrollY >= stickyPoint) {
-        // When the scrollbar sticks to the top
-        scrollbar.style.backgroundColor = 'rgba(0, 0, 0, 1)'; // Set the desired background color
+    if (isScrolled) {
+        scrollbar.classList.add('sticky-bg');
     } else {
-        // When the scrollbar is not at the top
-        scrollbar.style.backgroundColor = 'transparent'; // Reset to transparent
+        scrollbar.classList.remove('sticky-bg');
     }
 }
+
+// Update stickyPoint on load and resize
+window.addEventListener('resize', updateStickyPoint);
 
 // Attach the function to the scroll event
 window.addEventListener('scroll', setScrollbarBackgroundOnStick);
 
 // Call the function initially to set the correct background on page load
 setScrollbarBackgroundOnStick();
+
+// Opzione 2 per video 
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const video = document.getElementById('promoVideo');
+//     const playBtn = document.getElementById('playButton');
+//     console.log('Button:', playBtn); // Add this line
+//     if (video && playBtn) {
+//         playBtn.addEventListener('click', function() {
+//             video.play();
+//             console.log('Video is playing');
+//             playBtn.style.display = 'none';
+//         });
+//         video.addEventListener('pause', function() {
+//             playBtn.style.display = '';
+//         });
+//         video.addEventListener('play', function() {
+//             playBtn.style.display = 'none';
+//         });
+//     }
+// });

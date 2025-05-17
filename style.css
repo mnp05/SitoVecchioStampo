@@ -14,6 +14,7 @@ body
     background:linear-gradient(black 30%, #4a3832 );
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     margin: 0; /* Rimuove margini predefiniti del browser */
     padding: 0; /* Rimuove padding predefiniti del browser */
     width: 100%;
@@ -115,6 +116,23 @@ body
 {
     text-shadow: 1px 1px 20px white;
 }
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+
+
 #menu-section
 {
     padding: 0 20px;
@@ -129,7 +147,7 @@ body
     font-family: "Sancreek", sans-serif;
     font-weight: 150;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 30px;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -143,7 +161,7 @@ body
     position: absolute;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background: linear-gradient(to right, transparent 20%, #6e797a, transparent 80%);
     opacity: 0.8;
     transition: height 0.3s ease, opacity 0.3s ease;
@@ -157,6 +175,10 @@ body
     bottom: -2px; /* Bordo inferiore */
 }
 
+.menu-scrollbar-container.sticky-bg {
+    background-color: rgba(0, 0, 0, 1) !important;
+}
+
 .menu-scrollbar-container
 {
     display: flex;
@@ -166,6 +188,7 @@ body
     z-index: 100;
     padding: 10px;
     background-color: transparent;
+    /* transition: background-color 0.3s; */
 }
 
 .menu-scrollbar-container::before,
@@ -354,10 +377,33 @@ body
     font-size: 16px; /* Slightly smaller font size for sizes */
 }
 
-#provspace
-{
-    font-size: 150px;
+/* .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s;
+    justify-content: center;
+    z-index: 2;
 }
+
+.play-icon {
+    margin-left: 5px; 
+}
+
+.play-btn:hover {
+    background: rgba(0,0,0,0.8);
+} */
 
 @media (max-width: 600px) {
     /* Ensure no horizontal scrolling */
@@ -371,10 +417,10 @@ body
     /* Wrapper adjustments */
     .wrapper {
         width: 100%; /* Ensure the wrapper occupies the full width */
+        overflow-x: hidden; /* Disable horizontal scrolling */
     }
 
     .wrapper, .container {
-        overflow: visible; /* Ensure sticky works properly */
         position: relative; /* Allow sticky positioning */
     }
 
@@ -391,6 +437,7 @@ body
         padding: 10px;
         max-width: 100%; /* Ensure the menu section occupies the full width */
         margin: 0 auto;
+        overflow-x: visible;
     }
 
     /* Sticky scrollbar adjustments */
