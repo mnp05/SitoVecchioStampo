@@ -67,7 +67,7 @@ body
     color: #6e797a;
     border-collapse: collapse;
     width: 90%;
-    max-width: 900px;  
+    max-width: 600px;  
 }
 
 #table a 
@@ -434,6 +434,11 @@ body
         text-align: center;
     }
 
+    #logo-caption
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
     /* Menu section adjustments */
     #menu-section {
         padding: 10px;
