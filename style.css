@@ -430,14 +430,14 @@ body
     .container {
         max-width: 100%; /* Ensure the container occupies the full width */
         margin: 0 auto; /* Center the container */
-        padding: 0 10px; /* Add some padding for spacing */
+        /* padding: 0 10px; Add some padding for spacing */
         text-align: center;
     }
 
     #logo-caption
     {
-        margin-left: 0%;
-        margin-right: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     /* Menu section adjustments */
     #menu-section {
