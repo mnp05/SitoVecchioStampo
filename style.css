@@ -327,6 +327,7 @@ body
 
 .dish-name
 {
+    font-family: "Noto Serif", sans-serif;
     flex: 1;
     font-weight: bold;
     text-transform: uppercase;
@@ -358,7 +359,8 @@ body
 {
     font-style: italic;
     color: #6e797a;
-    font-family: "Sancreek", sans-serif;
+    font-family: "Noto Serif", sans-serif;
+    /* text-transform: uppercase; */
     text-align: right;
     font-size: 9px;
 }
