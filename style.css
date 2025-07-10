@@ -354,6 +354,14 @@ body
     margin: 1px 0 15px 0;
     line-height: 1.5;
 }
+.frozen
+{
+    font-style: italic;
+    color: #6e797a;
+    font-family: "Sancreek", sans-serif;
+    text-align: right;
+    font-size: 9px;
+}
 
 .sized-dish {
     display: block; /* Stack the beer name and sizes vertically */
